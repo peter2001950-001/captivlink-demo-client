@@ -1,0 +1,35 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  padding: 25px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.mat-success {
+    color: white !important;
+}
+.mat-success:hover,
+.mat-stroked-button.mat-success:hover {
+  background-color: #277f3b;
+}
+
+button.mat-success {
+  color: #f0fff3;
+  background-color: #155724;
+}
+
+button.mat-primary {
+  color: white !important;
+}
+button.mat-primary:hover{
+background-color: #b546ac;
+}
+
+button.mat-primary {
+color: #f0fff3;
+background-color: #83297b;
+}
