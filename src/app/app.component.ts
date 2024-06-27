@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
     }
     var request = this.form?.getRawValue();
     request.accessToken = null;
-    this.httpClient.post("https://e.captivlink.com/purchase", request, {headers: {"x-access-token": this.form?.controls["accessToken"].value}} ).subscribe(res=>{
+    this.httpClient.post("https://e.captivlink.com/purchase", request, {headers: {"x-access-token": this.form?.controls["accessToken"].value}, withCredentials: true} ).subscribe(res=>{
 
     })
   }
