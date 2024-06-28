@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.form = new FormGroup({
       accessToken: new FormControl('', Validators.required),
-      orderNumber: new FormControl('', Validators.required),
+      identifier: new FormControl('', Validators.required),
       amount: new FormControl('',Validators.required),
     });
     this.generateData();
@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
   generateData(){
     var orderNumber = makeid(10);
     var amount = (Math.random() * 150).toFixed(2);
-    this.form?.controls["orderNumber"].setValue(orderNumber);
+    this.form?.controls["identifier"].setValue(orderNumber);
     this.form?.controls["amount"].setValue(amount);
   }
 
